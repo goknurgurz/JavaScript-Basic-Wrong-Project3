@@ -4,13 +4,10 @@ JavaScript Faz 5 kapsamında diziler, objeler ve veri işleme yöntemlerini uygu
 
 ## Proje önizlemesi
 
-<!-- Görsel 1: Ürün yönetim ekranı -->
 
-![Ürün Yönetim Sistemi](./assets/product-management.png)
+![Ürün Yönetim Sistemi](./img/ogrencisis.png)
 
-<!-- Görsel 2: Öğrenci analiz ekranı -->
 
-![Öğrenci Veri Analiz Sistemi](./assets/student-analysis.png)
 
 ## Projeler
 
