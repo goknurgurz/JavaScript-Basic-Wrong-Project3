@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DataLab | Faz 5</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <b>Data<span>Lab</span></b>
+      <nav>
+        <a href="#products">Ürün Yönetimi</a
+        ><a href="#students">Öğrenci Analizi</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <small>JAVASCRIPT · FAZ 5</small>
+          <h1>Veriyi keşfet,<br /><em>bilgiye dönüştür.</em></h1>
+          <p>
+            Diziler, objeler ve modern JavaScript yöntemleriyle ürünleri yönet,
+            öğrenci verilerini analiz et.
+          </p>
+        </div>
+        <strong
+          ><i id="heroProductCount">0</i><br /><small
+            >ürün kayıtlı</small
+          ></strong
+        >
+      </section>
+      <section class="panel" id="products">
+        <small>PROJE 01</small>
+        <h2>Ürün Yönetim Sistemi</h2>
+        <p>Ürünleri ara, filtrele ve sırala.</p>
+        <div class="toolbar">
+          <input id="searchInput" placeholder="Ürün veya marka ara..." /><select
+            id="categoryFilter"
+          >
+            <option value="all">Tüm kategoriler</option>
+            <option>Elektronik</option>
+            <option>Giyim</option>
+            <option>Ev</option>
+            <option>Kitap</option></select
+          ><select id="sortSelect">
+            <option value="default">Varsayılan sıralama</option>
+            <option value="price-asc">Fiyat: Artan</option>
+            <option value="price-desc">Fiyat: Azalan</option>
+            <option value="name">İsim: A-Z</option>
+          </select>
+        </div>
+        <div class="stats">
+          <article>Gösterilen ürün<strong id="visibleCount">0</strong></article>
+          <article>
+            Ürünlerin toplam değeri<strong id="totalValue">₺0</strong>
+          </article>
+          <article>Ortalama fiyat<strong id="averagePrice">₺0</strong></article>
+        </div>
+        <div id="productGrid" class="products"></div>
+        <p id="productEmpty" class="empty hidden">
+          Aramana uygun ürün bulunamadı.
+        </p>
+      </section>
+      <section class="panel" id="students">
+        <small>PROJE 02</small>
+        <h2>Öğrenci Veri Analiz Sistemi</h2>
+        <p>Notları ve öğrenci bilgilerini analiz et.</p>
+        <div class="stats four">
+          <article>Öğrenci sayısı<strong id="studentCount">0</strong></article>
+          <article>
+            Sınıf ortalaması<strong id="classAverage">0</strong>
+          </article>
+          <article>
+            Başarılı öğrenci<strong id="successfulCount">0</strong>
+          </article>
+          <article>En yüksek not<strong id="highestGrade">0</strong></article>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Öğrenci</th>
+                <th>Bölüm</th>
+                <th>Not</th>
+                <th>Durum</th>
+              </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+          </table>
+        </div>
+        <div class="insights">
+          <article>
+            <h3>Bölümlere göre öğrenci sayısı</h3>
+            <div id="departmentStats"></div>
+          </article>
+          <article>
+            <h3>Başarılı öğrenciler</h3>
+            <div id="successfulStudents"></div>
+          </article>
+        </div>
+      </section>
+      <footer>DataLab · JavaScript Faz 5 çalışma projesi</footer>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
